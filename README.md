@@ -27,6 +27,8 @@ app](https://github.com/JJTofflemire/Signal-Android)
 
   - HCaptcha was the prompt we kept getting during testing, so we created our own and hardcoded `registration` into the redirect url
 
+- Signal translates the text of the `Open Signal` button - currently it is hardcoded to `en`, but you can check out the full list on the first line of signalcaptcha's [`bundle.js`](backup-from-signalcaptchas/bundle.js)
+
 - Signal uses a protocol that `Signal-Android` and `Signal-Server` can recognize (the `signalcaptcha://` from above), which we copied in directly
 
 - Sometimes there are more than 2000 characters in the redirect url, prompting the website to send the code to another webpage (`https://signalcaptchas/shortener`), which shortens the url somehow (closed source website and probably only internally accessible), along with a `-short` at the end of the url
@@ -38,3 +40,5 @@ app](https://github.com/JJTofflemire/Signal-Android)
 - Make the web page prettier
 
   - Probably just entails making the background transparent / detecting light and dark mode, and centering the `hcaptcha`
+  
+- Implement the `shortener` (will never happen)
