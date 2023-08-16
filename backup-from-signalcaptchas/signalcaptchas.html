@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://signalcaptchas.org/registration/generate -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://signalcaptchas.org/assets/favicon/favicon-32x32.png">
+    <title>Signal</title>
+    <style type="text/css">
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Inter, "Helvetica Neue", "Source Sans Pro", "Source Han Sans SC", "Source Han Sans CN", "Hiragino Sans GB", "Hiragino Kaku Gothic", "Microsoft Yahei UI", Helvetica, Arial, sans-serif;
+      }
+
+      a {
+        color: #2c6bed;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      #container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #container a {
+        margin-top: 16px;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: #121212;
+        }
+
+        a {
+          color: #e9e9e9;
+        }
+      }
+    </style>
+  </head>
+  <body class="captcha-not-done">
+    <div id="container">
+      <div id="captcha"><iframe src="./signalcaptchas_files/hcaptcha.html" tabindex="0" frameborder="0" scrolling="no" title="Widget containing checkbox for hCaptcha security challenge" data-hcaptcha-widget-id="0w1tm7t5u7ql" data-hcaptcha-response="" style="width: 303px; height: 78px; overflow: hidden;"></iframe><textarea id="g-recaptcha-response-0w1tm7t5u7ql" name="g-recaptcha-response" style="display: none;"></textarea><textarea id="h-captcha-response-0w1tm7t5u7ql" name="h-captcha-response" style="display: none;"></textarea></div>
+    </div>
+  
+    <script type="text/javascript" src="./signalcaptchas_files/bundle.js"></script>
+  
+    <script type="text/javascript">
+      var rollout = 1.0;
+      var useHcaptcha = Math.random() < rollout;
+  
+      var scriptTag = document.createElement("script");
+      scriptTag.async = true
+      scriptTag.defer = true
+      if (useHcaptcha) {
+        scriptTag.src = "https://js.hcaptcha.com/1/api.js?onload=onloadHcaptcha&render=explicit"
+      } else {
+        scriptTag.src = "https://www.google.com/recaptcha/enterprise.js?onload=onload&render=explicit";
+      }
+      document.body.appendChild(scriptTag);
+    </script><script async="" defer="" src="./signalcaptchas_files/api.js"></script>
+  
+
+<div aria-hidden="true" style="background-color: rgb(255, 255, 255); border: 1px solid rgb(215, 215, 215); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px; border-radius: 4px; left: auto; top: -10000px; z-index: -2147483648; position: absolute; transition: opacity 0.15s ease-out 0s; opacity: 0; visibility: hidden;"><div style="position: relative; z-index: 1;"><iframe src="./signalcaptchas_files/hcaptcha(1).html" frameborder="0" scrolling="no" title="Main content of the hCaptcha challenge" style="border: 0px; z-index: 2000000000; position: relative;"></iframe></div><div style="width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div style="border-width: 11px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 1; right: 100%;"><div style="border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;"></div><div style="border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;"></div></div></div></body></html>
