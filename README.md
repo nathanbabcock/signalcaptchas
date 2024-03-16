@@ -1,9 +1,9 @@
 # Signal Captchas
 
 - Used to display a CAPTCHA inside a forked [Signal-Android
-app](https://github.com/JJTofflemire/Signal-Android)
+app](https://github.com/jtof-dev/Signal-Android)
 
-- If you are looking to implement this for your Signal-Server / Signal-Android, check out [the nginx-certbot docker container](https://github.com/JJTofflemire/Signal-Docker/tree/main/nginx-certbot) which includes configuration for this
+- If you are looking to implement this for your Signal-Server / Signal-Android, check out [the nginx-certbot docker container](https://github.com/jtof-dev/Signal-Docker/tree/main/nginx-certbot) which includes configuration for this
 
 **Hosted at <https://eyedropper.app/signalcaptchas/>**
 
@@ -17,7 +17,7 @@ app](https://github.com/JJTofflemire/Signal-Android)
 
 - Re-use the existing Signal-Android's custom protocol handler (`signalcaptcha://`)
 
-- Host in S3 bucket, or add some [nginx](https://github.com/JJTofflemire/Signal-Docker/tree/main/nginx-certbot) configuration to host on a domain with an extra `location` block
+- Host in S3 bucket, or add some [nginx](https://github.com/jtof-dev/Signal-Docker/tree/main/nginx-certbot) configuration to host on a domain with an extra `location` block
 
 ## Documentation
 
